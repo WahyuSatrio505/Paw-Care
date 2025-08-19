@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Animal - Kesehatan Hewan Terdepan</title>
+
+    <!-- pangil css -->
+    <link rel="stylesheet" href="../style/LayananDarurat.css">
+    <link rel="stylesheet" href="../style/styles.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- atas -->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-paw me-2"></i>Paw Care🫎
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Tentang Kami">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articles">Artikel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#emergency">Darurat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>Kesehatan Hewan di Era Digital</h1>
+                        <p>Platform terdepan untuk konsultasi veteriner online, perawatan hewan, dan edukasi kesehatan hewan peliharaan Anda.</p>
+                        <a href="#services" class="btn-primary-custom">
+                            <i class="fas fa-rocket me-2"></i>Mulai Konsultasi
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <i class="fas fa-heartbeat" style="font-size: 15rem; color: rgba(79, 70, 229, 0.1);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Layanan Kami</h2>
+                <p>Solusi lengkap untuk kesehatan dan perawatan hewan peliharaan Anda</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>Konsultasi Online</h4>
+                        <p>Konsultasi langsung dengan dokter hewan berpengalaman melalui video call atau chat.</p>
+                        <ul class="service-features">
+                            <li>Video call HD</li>
+                            <li>Chat real-time</li>
+                            <li>Resep digital</li>
+                            <li>Follow-up gratis</li>
+                        </ul>
+                        <a href="#" class="btn-service" onclick="showConsultationForm()">Mulai Konsultasi</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <h4>Vaksinasi & Perawatan</h4>
+                        <p>Jadwal vaksinasi dan perawatan rutin untuk menjaga kesehatan hewan peliharaan.</p>
+                        <ul class="service-features">
+                            <li>Reminder vaksinasi</li>
+                            <li>Jadwal perawatan</li>
+                            <li>Klinik terdekat</li>
+                            <li>Riwayat medis</li>
+                        </ul>
+                        <a href="#" class="btn-service" onclick="showVaccinationSchedule()">Lihat Jadwal</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h4>Grooming & Perawatan</h4>
+                        <p>Layanan grooming profesional dan perawatan umum untuk kenyamanan hewan.</p>
+                        <ul class="service-features">
+                            <li>Grooming profesional</li>
+                            <li>Perawatan kuku</li>
+                            <li>Pembersihan telinga</li>
+                            <li>Spa hewan</li>
+                        </ul>
+                        <a href="#" class="btn-service" onclick="showGroomingServices()">Book Grooming</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h4>Darurat 24 Jam</h4>
+                        <p>Layanan darurat 24/7 dengan akses cepat ke klinik terdekat dan hotline.</p>
+                        <ul class="service-features">
+                            <li>Hotline 24/7</li>
+                            <li>Lokasi klinik terdekat</li>
+                            <li>Ambulans hewan</li>
+                            <li>First aid guide</li>
+                        </ul>
+                        <a href="#emergency" class="btn-service">Hubungi Darurat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Artikel & Edukasi</h2>
+                <p>Pelajari cara merawat hewan peliharaan Anda dengan baik</p>
+            </div>
+            
+            <div class="article-categories fade-in">
+                <button class="category-btn active" onclick="filterArticles('all')">Semua</button>
+                <button class="category-btn" onclick="filterArticles('kucing')">Kucing</button>
+                <button class="category-btn" onclick="filterArticles('anjing')">Anjing</button>
+                <button class="category-btn" onclick="filterArticles('burung')">Burung</button>
+                <button class="category-btn" onclick="filterArticles('reptil')">Reptil</button>
+                <button class="category-btn" onclick="filterArticles('tips')">Tips Perawatan</button>
+            </div>
+            
+            <div class="row" id="articles-container">
+                <div class="col-lg-4 col-md-6 article-item" data-category="kucing">
+                    <div class="article-card fade-in">
+                        <div class="article-image">
+                            <i class="fas fa-cat"></i>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Kucing</span>
+                            <h5 class="article-title">Cara Merawat Kucing Persia</h5>
+                            <p class="article-excerpt">Panduan lengkap merawat kucing Persia, mulai dari grooming hingga nutrisi yang tepat untuk menjaga kesehatan bulu dan mata.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-user me-1"></i>Dr. Sarah</span>
+                                <span><i class="fas fa-calendar me-1"></i>2 hari lalu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 article-item" data-category="anjing">
+                    <div class="article-card fade-in">
+                        <div class="article-image">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Anjing</span>
+                            <h5 class="article-title">Vaksinasi Wajib untuk Anjing</h5>
+                            <p class="article-excerpt">Jadwal vaksinasi yang tepat untuk anjing dari usia puppy hingga dewasa, termasuk vaksin rabies dan distemper.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-user me-1"></i>Dr. Ahmad</span>
+                                <span><i class="fas fa-calendar me-1"></i>5 hari lalu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 article-item" data-category="burung">
+                    <div class="article-card fade-in">
+                        <div class="article-image">
+                            <i class="fas fa-dove"></i>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Burung</span>
+                            <h5 class="article-title">Mengenali Gejala Sakit pada Burung</h5>
+                            <p class="article-excerpt">Tanda-tanda burung peliharaan sedang sakit dan langkah pertolongan pertama yang bisa dilakukan di rumah.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-user me-1"></i>Dr. Maya</span>
+                                <span><i class="fas fa-calendar me-1"></i>1 minggu lalu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 article-item" data-category="tips">
+                    <div class="article-card fade-in">
+                        <div class="article-image">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Tips Perawatan</span>
+                            <h5 class="article-title">Tips Menjaga Kebersihan Kandang</h5>
+                            <p class="article-excerpt">Cara membersihkan kandang yang benar untuk mencegah penyakit dan menjaga kesehatan hewan peliharaan.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-user me-1"></i>Dr. Budi</span>
+                                <span><i class="fas fa-calendar me-1"></i>3 hari lalu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 article-item" data-category="reptil">
+                    <div class="article-card fade-in">
+                        <div class="article-image">
+                            <i class="fas fa-dragon"></i>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Reptil</span>
+                            <h5 class="article-title">Perawatan Iguana untuk Pemula</h5>
+                            <p class="article-excerpt">Panduan dasar merawat iguana, termasuk setup terrarium, suhu, kelembaban, dan makanan yang tepat.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-user me-1"></i>Dr. Lisa</span>
+                                <span><i class="fas fa-calendar me-1"></i>4 hari lalu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 article-item" data-category="tips">
+                    <div class="article-card fade-in">
+                        <div class="article-image">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <div class="article-content">
+                            <span class="article-category">Tips Perawatan</span>
+                            <h5 class="article-title">Pertolongan Pertama Hewan</h5>
+                            <p class="article-excerpt">Langkah-langkah pertolongan pertama yang bisa dilakukan saat hewan peliharaan mengalami kecelakaan atau sakit mendadak.</p>
+                            <div class="article-meta">
+                                <span><i class="fas fa-user me-1"></i>Dr. Rina</span>
+                                <span><i class="fas fa-calendar me-1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+<section class="emergency-section">
+    <div class="container">
+        <h2 class="section-title"><i class="fa fa-ambulance me-2"></i> Layanan Darurat</h2>
+        <p class="lead mb-5">Kami siap membantu hewan peliharaan Anda 24/7. Hubungi kami segera!</p>
+        
+        <!-- Hotline -->
+        <div class="mb-5">
+            <h3>Hotline 24 Jam</h3>
+            <p><i class="fa fa-phone fa-2x me-2"></i> 0812-345-6789</p>
+            <a href="tel:08123456789" class="btn hotline-btn"><i class="fa fa-headset me-2"></i> Hubungi Sekarang</a>
+        </div>
+        
+        <!-- Klinik Terdekat -->
+        <h3 class="mb-4">Klinik Terdekat</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card clinic-card">
+                    <img src="assets/klinik1.jpg" alt="Klinik 1" class="clinic-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Klinik Hewan Sehat</h5>
+                        <p class="card-text"><i class="fa fa-map-marker-alt me-2"></i> Jl. Sudirman 123, Jakarta</p>
+                        <p><i class="fa fa-clock me-2"></i> Buka 24 Jam</p>
+                        <a href="#" class="btn btn-outline-primary"><i class="fa fa-directions me-2"></i> Lihat Peta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card clinic-card">
+                    <img src="assets/klinik2.jpg" alt="Klinik 2" class="clinic-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Pet Care Center</h5>
+                        <p class="card-text"><i class="fa fa-map-marker-alt me-2"></i> Jl. Thamrin 45, Bandung</p>
+                        <p><i class="fa fa-clock me-2"></i> Buka 24 Jam</p>
+                        <a href="#" class="btn btn-outline-primary"><i class="fa fa-directions me-2"></i> Lihat Peta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card clinic-card">
+                    <img src="assets/klinik3.jpg" alt="Klinik 3" class="clinic-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal Safe</h5>
+                        <p class="card-text"><i class="fa fa-map-marker-alt me-2"></i> Jl. Gatot Subroto 78, Surabaya</p>
+                        <p><i class="fa fa-clock me-2"></i> Buka 24 Jam</p>
+                        <a href="#" class="btn btn-outline-primary"><i class="fa fa-directions me-2"></i> Lihat Peta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Maps Integration -->
+        <h3 class="mt-5 mb-4">Temukan Klinik di Peta</h3>
+        <div id="map" class="map-container"></div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5><i class="fas fa-paw me-2"></i>Tech Animal</h5>
+                    <p>Platform kesehatan hewan terdepan yang menghubungkan pemilik hewan dengan dokter veteriner profesional.</p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Layanan</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Konsultasi Online</a></li>
+                        <li><a href="#">Vaksinasi</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Darurat 24 Jam</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Edukasi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Artikel Kucing</a></li>
+                        <li><a href="#">Artikel Anjing</a></li>
+                        <li><a href="#">Tips Perawatan</a></li>
+                        <li><a href="#">Infografis</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Bantuan</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Kontak</h5>
+                    <p><i class="fas fa-envelope me-2"></i>info@techanimal.com</p>
+                    <p><i class="fas fa-phone me-2"></i>+62 21 1234 5678</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2024 Tech Animal. All rights reserved. Made with <i class="fas fa-heart text-danger"></i> for animal lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- untuk js -->
+<script src="/js/main.js"></script>
+<script src="/js/LayananDarurat.js"></script>
+
+<!-- end codingan -->
+</body>
+</html>
